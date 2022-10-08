@@ -3,25 +3,22 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans300/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans300/font.woff") format("woff");
-    font-weight: font-weight;
-    font-style: normal;
-    font-display: swap;
+  p {
+    @apply text-grey-dark-primary;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-screen-2xl mx-auto;
   }
 
-  @font-face {
-    font-family: "font name";
-    src: url("/assets/fonts/MuseoSans500/font.woff2") format("woff2"),
-      url("/assets/fonts/MuseoSans500/font.woff") format("woff");
-    font-weight: font-weight;
-    font-style: strong;
-    font-display: swap;
+  .wrapper {
+    @apply px-[20px] sm:px-0 sm:max-w-[550px] md:max-w-[692px] xl:max-w-[1140px] mx-auto;
   }
 
-  html:focus-within {
-    scroll-behavior: smooth;
+  /* Default paragraph stylings */
+  .para {
+    @apply text-sm md:text-lg 2xl:text-xl leading-[22px] md:leading-[28px] 2xl:leading-[30px];
   }
 }

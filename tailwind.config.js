@@ -14,7 +14,18 @@ module.exports = {
         "3xl": "1920px",
       },
       fontFamily: {
-        sans: ["fontFamily", ...defaultTheme.fontFamily.serif],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Libre Baskerville", ...defaultTheme.fontFamily.serif],
+      },
+      colors: {
+        grey: {
+          light: "#8E8C95",
+          dark: {
+            primary: "#64626A",
+            secondary: "#3B3A40",
+          },
+        },
+        orange: "#FF6846",
       },
     },
   },

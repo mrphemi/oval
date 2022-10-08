@@ -1,48 +1,17 @@
-import { useEffect } from "react";
-
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
-import * as Fathom from "fathom-client";
-
-import * as gtag from "../lib/gtag";
 
 import Nav from "@/components/common/Nav";
 import Footer from "@/components/common/Footer";
 
 import "../styles/globals.css"; // Global style sheet for css
-// import "../styles/global.scss"; //Global stylesheet for sass
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const siteUrl = process.env.SITE_URL as string;
   const siteTitle = process.env.SITE_TITLE;
-  const fathom = process.env.FATHOM_ANALYTICS_ID as string; //fathom analytics id
-  const siteUrlhttpsStripped = process.env.SITE_URL?.split("//")[1] as string;
   const isHomePage = router.asPath === "/";
-
-  useEffect(() => {
-    // Load fathom analytics
-    // Fathom.load(fathom, {
-    //   includedDomains: [siteUrlhttpsStripped],
-    //   excludedDomains: ["localhost", "*.vercel.app"],
-    // });
-
-    // Google Analytics
-    const handleRouteChange = (url: URL) => {
-      gtag.pageview(url);
-    };
-
-    // Fathom Analytics
-    // const handleRouteChange = () => {
-    //   Fathom.trackPageview();
-    // };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
 
   return (
     <>

@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 
+import Header from "@/components/home/Header";
+
 const Home: NextPage = () => {
   return (
     <>
-      <div>
-        <h1>Next Project Starter</h1>
-      </div>
+      <Header />
     </>
   );
 };
