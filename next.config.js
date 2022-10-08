@@ -4,7 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   env: {
     SITE_URL: "site url",
-    SITE_TITLE: "Site Title",
+    SITE_TITLE: "Oval",
     GOOGLE_ANALYTICS_ID: "yourgaid",
     FATHOM_ANALYTICS_ID: "yourfathomanalyticsid",
   },
