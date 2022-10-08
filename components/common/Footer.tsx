@@ -22,19 +22,19 @@ const Footer = () => {
             {/* Socials */}
             <div className="flex gap-x-5">
               <Link href="/" passHref>
-                <a aria-aria-label="twitter">
+                <a aria-label="twitter">
                   <Twitter />
                 </a>
               </Link>
 
               <Link href="/" passHref>
-                <a aria-aria-label="facebook">
+                <a aria-label="facebook">
                   <Facebook />
                 </a>
               </Link>
 
               <Link href="/" passHref>
-                <a aria-aria-label="linkedin">
+                <a aria-label="linkedin">
                   <Linkedin />
                 </a>
               </Link>
