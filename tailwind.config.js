@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "2xl": "1440px",
-        "3xl": "1920px",
+        xl: "1440px",
+        "2xl": "1920px",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
@@ -25,7 +25,11 @@ module.exports = {
             secondary: "#3B3A40",
           },
         },
+        green: {
+          light: "#C2EED8",
+        },
         orange: "#FF6846",
+        gold: "#FFDEA7",
       },
     },
   },

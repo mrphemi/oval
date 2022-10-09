@@ -15,7 +15,7 @@ const Nav = () => {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="2xl:hidden"
+          className="xl:hidden"
         >
           <path
             fillRule="evenodd"
@@ -27,7 +27,7 @@ const Nav = () => {
       </div>
 
       {/* Links */}
-      <ul className="hidden 2xl:flex gap-x-9">
+      <ul className="hidden xl:flex gap-x-9">
         <li>
           <NavLink href="/about">About Us</NavLink>
         </li>

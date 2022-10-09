@@ -9,9 +9,9 @@ import Linkedin from "./Linkedin";
 const Footer = () => {
   return (
     <footer className="bg-black pt-10 pb-5 md:py-20">
-      <div className="wrapper flex flex-col-reverse md:flex-row gap-y-10 md:gap-y-0 md:gap-x-[68px] md:space-y-10 2xl:space-y-0 2xl:justify-between">
+      <div className="wrapper flex flex-col-reverse md:flex-row gap-y-10 md:gap-y-0 md:gap-x-[68px] md:space-y-10 xl:space-y-0 xl:justify-between">
         {/* Logo, Socials & Copyright  */}
-        <div className="flex md:flex-col justify-between md:justify-start 2xl:justify-between gap-y-[60px] md:max-w-[108px]">
+        <div className="flex md:flex-col justify-between md:justify-start xl:justify-between gap-y-[60px] md:max-w-[108px]">
           <div className="flex flex-col-reverse md:flex-col gap-y-11 md:gap-y-6">
             <Link href="" passHref>
               <a aria-label="Oval logo">
@@ -45,9 +45,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Oval
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-y-10 md:flex md:gap-x-9 2xl:gap-x-[83px]">
+        <div className="grid grid-cols-2 gap-y-10 md:flex md:gap-x-9 xl:gap-x-[83px]">
           <ul>
-            <li className="text-white text-sm font-bold hidden 2xl:block mb-[18px]">
+            <li className="text-white text-sm font-bold hidden xl:block mb-[18px]">
               Product
             </li>
             <div className="space-y-3">
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </ul>
           <ul>
-            <li className="text-white text-sm font-bold hidden 2xl:block mb-[18px]">
+            <li className="text-white text-sm font-bold hidden xl:block mb-[18px]">
               Services
             </li>
             <div className="space-y-3">
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
           </ul>
           <ul>
-            <li className="text-white text-sm font-bold hidden 2xl:block mb-[18px]">
+            <li className="text-white text-sm font-bold hidden xl:block mb-[18px]">
               Company
             </li>
             <div className="space-y-3">
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
           </ul>
           <ul>
-            <li className="text-white text-sm font-bold hidden 2xl:block mb-[18px]">
+            <li className="text-white text-sm font-bold hidden xl:block mb-[18px]">
               More
             </li>
             <div className="space-y-3">

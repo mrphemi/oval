@@ -5,20 +5,25 @@ import Graph from "../../public/assets/images/home/graph.png";
 
 const Header = () => {
   return (
-    <header className="my-5 md:my-12 2xl:my-[105px]">
-      <div className="space-y-[26px] md:space-y-[42px] 2xl:space-y-[48px]">
+    <header className="mt-5 mb-14 md:mt-12 md:mb-[120px] xl:mt-[105px] xl:mb-[200px]">
+      <div className="space-y-[26px] md:space-y-[42px] xl:space-y-[48px]">
         <div className="space-y-[18px] md:space-y-6">
-          <h1 className="font-serif text-[34px] md:text-5xl 2xl:text-6xl leading-[46px] md:leading-[60px] 2xl:leading-[74px] text-center w-[280px] md:w-[600px] 2xl:w-[836px] mx-auto">
-            Simpler tool that freedom your work way.
+          <h1 className="text-center w-[280px] md:w-[600px] xl:w-[836px] mx-auto">
+            Simpler tool that{" "}
+            <span className="relative">
+              freedom{" "}
+              <span className="bg-gold absolute bottom-2 left-0 md:-left-3 xl:left-0 w-full h-[24px] md:h-[39px] xl:h-[46px] -z-10"></span>
+            </span>
+            your work way.
           </h1>
           <p className="para text-center w-[280px] md:w-[490px] mx-auto">
             Build your own workspace to replace isolated tools and bring
             everyone together.
           </p>
         </div>
-        <div className="flex gap-x-4 2xl:gap-x-6 justify-center">
+        <div className="flex gap-x-4 xl:gap-x-6 justify-center">
           <Link href="/download" passHref>
-            <a className="text-white text-[15px] md:text-base py-[13px] md:py-4 2xl:py-5 px-6 md:px-10 2xl:px-[55px] font-bold bg-orange rounded-lg">
+            <a className="text-white text-[15px] md:text-base py-[13px] md:py-4 xl:py-5 px-6 md:px-10 xl:px-[55px] font-bold bg-orange rounded-lg">
               Try for free
             </a>
           </Link>
@@ -41,21 +46,16 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="max-w-[1235px] mx-auto mt-[42px] md:mt-[60px] 2xl:mt-[87px] mb-8 md:mb-16 2xl:mb-[74px]">
-        <Image
-          width={Graph.width / 2}
-          height={Graph.height / 2}
-          src={Graph}
-          priority
-          alt="Application frame"
-        />
+      {/* Image */}
+      <div className="max-w-[1235px] mx-auto mt-[42px] md:mt-[60px] xl:mt-[87px] mb-8 md:mb-16 xl:mb-[74px]">
+        <Image src={Graph} priority alt="Application frame" />
       </div>
 
       <div className="text-center space-y-[11px] md:space-y-[14px]">
-        <p className="text-lg md:text-[22px] 2xl:text-2xl leading-[21px] md:leading-[27px] 2xl:leading-[29px] text-black font-semibold">
+        <p className="text-lg md:text-[22px] xl:text-xl leading-[21px] md:leading-[27px] xl:leading-[29px] text-black font-semibold">
           Tools erect walls
         </p>
-        <p className="para w-[280px] md:w-[567px] 2xl:w-[657px] mx-auto">
+        <p className="para w-[280px] md:w-[567px] xl:w-[657px] mx-auto">
           Collaboration is a struggle, when everybody uses a different app. We
           have the solution for that.
         </p>
