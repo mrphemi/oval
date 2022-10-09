@@ -44,8 +44,8 @@ const Workspace = () => {
               <path
                 d="M5 2L11 8L5 14"
                 stroke="black"
-                stroke-width="2"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
               />
             </svg>
             <div className="w-[250px] md:w-[185px] xl:w-[430px] pb-[10px] xl:pb-4 space-y-[9px] border-b border-orange">
@@ -70,8 +70,8 @@ const Workspace = () => {
               <path
                 d="M5 2L11 8L5 14"
                 stroke="black"
-                stroke-width="2"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
               />
             </svg>
             <div className="w-[250px] md:w-[185px] xl:w-[430px] pb-[10px] xl:pb-4 space-y-[9px] border-b border-orange">
@@ -96,8 +96,8 @@ const Workspace = () => {
               <path
                 d="M5 2L11 8L5 14"
                 stroke="black"
-                stroke-width="2"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
               />
             </svg>
             <div className="w-[250px] md:w-[185px] xl:w-[430px] pb-[10px] xl:pb-4 space-y-[9px] border-b border-orange">
