@@ -4,12 +4,26 @@
 
 @layer base {
   p {
-    @apply text-grey-dark-primary;
+    @apply text-oval-grey-dark-primary;
   }
 
   h1,
   h2 {
     @apply font-serif text-[34px] md:text-5xl xl:text-6xl leading-[46px] md:leading-[60px] xl:leading-[74px];
+  }
+}
+
+@layer components {
+  .plan {
+    @apply text-center py-[30px] md:py-9 xl:py-12 border-b border-[#D1D0D6] last-of-type:border-transparent xl:border-b-transparent xl:border-r;
+  }
+
+  .plan:nth-last-of-type(-n + 2) {
+    @apply md:border-b-transparent;
+  }
+
+  .plan:nth-of-type(odd) {
+    @apply md:border-r;
   }
 }
 
@@ -27,7 +41,19 @@
   }
 
   /* Default paragraph stylings */
-  .para {
+  .paragraph {
     @apply text-sm md:text-lg xl:text-xl leading-[22px] md:leading-[28px] xl:leading-[30px];
   }
+}
+
+#testimonials::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial:first-of-type {
+  @apply pl-0;
+}
+
+.testimonial:last-of-type {
+  @apply pr-0;
 }

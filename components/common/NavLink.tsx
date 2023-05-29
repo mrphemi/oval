@@ -7,7 +7,7 @@ type NavLinkProps = { href: string; children: ReactChild | ReactChildren };
 function NavLink({ children, href }: NavLinkProps) {
   const router = useRouter();
 
-  const sharedStyles = `text-xs md:text-sm text-grey-light`;
+  const sharedStyles = `text-xs md:text-sm text-oval-grey-light`;
 
   const styles =
     router.asPath === href || router.asPath.includes(href)

@@ -1,6 +1,8 @@
-import React from "react";
+import { ComponentPropsWithoutRef } from "react";
 
-const Linkedin = () => {
+type Props = ComponentPropsWithoutRef<"svg">;
+
+const Linkedin = ({ className }: Props) => {
   return (
     <svg
       width="30"

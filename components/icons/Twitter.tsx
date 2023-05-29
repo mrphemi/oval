@@ -1,6 +1,8 @@
-import React from "react";
+import { ComponentPropsWithoutRef } from "react";
 
-const Twitter = () => {
+type Props = ComponentPropsWithoutRef<"svg">;
+
+const Twitter = ({ className }: Props) => {
   return (
     <svg
       width="30"

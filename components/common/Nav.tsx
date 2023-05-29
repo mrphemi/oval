@@ -46,14 +46,15 @@ const Nav = () => {
       </ul>
 
       <div className="hidden md:flex gap-x-12 items-center ml-auto">
-        <Link href="/login">
-          <a className="text-grey-dark-seconday">Login</a>
+        <Link href="/login" className="text-oval-grey-dark-seconday">
+          Login
         </Link>
 
-        <Link href="/download">
-          <a className="border border-grey-light rounded-lg font-semibold py-[11px] px-[16px]">
-            Try for free
-          </a>
+        <Link
+          href="/download"
+          className="border border-oval-grey-light rounded-lg font-semibold py-[11px] px-[16px]"
+        >
+          Try for free
         </Link>
       </div>
     </nav>

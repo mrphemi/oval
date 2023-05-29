@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import Logo from "./Logo";
 import NavLink from "./NavLink";
-import Twitter from "./Twitter";
-import Facebook from "./Facebook";
-import Linkedin from "./Linkedin";
+import Twitter from "../icons/Twitter";
+import Facebook from "../icons/Facebook";
+import Linkedin from "../icons/Linkedin";
 
 const Footer = () => {
   return (
@@ -13,35 +13,27 @@ const Footer = () => {
         {/* Logo, Socials & Copyright  */}
         <div className="flex md:flex-col justify-between md:justify-start xl:justify-between gap-y-[60px] md:max-w-[108px]">
           <div className="flex flex-col-reverse md:flex-col gap-y-11 md:gap-y-6">
-            <Link href="" passHref>
-              <a aria-label="Oval logo">
-                <Logo theme="light" />
-              </a>
+            <Link href="">
+              <Logo theme="light" />
             </Link>
 
             {/* Socials */}
             <div className="flex gap-x-5">
-              <Link href="/" passHref>
-                <a aria-label="twitter">
-                  <Twitter />
-                </a>
+              <Link href="/">
+                <Twitter />
               </Link>
 
-              <Link href="/" passHref>
-                <a aria-label="facebook">
-                  <Facebook />
-                </a>
+              <Link href="/">
+                <Facebook />
               </Link>
 
-              <Link href="/" passHref>
-                <a aria-label="linkedin">
-                  <Linkedin />
-                </a>
+              <Link href="/">
+                <Linkedin />
               </Link>
             </div>
           </div>
 
-          <p className="self-end md:self-auto text-xs md:text-sm text-grey-dark-primary">
+          <p className="self-end md:self-auto text-xs md:text-sm text-oval-grey-dark-primary">
             © {new Date().getFullYear()} Oval
           </p>
         </div>

@@ -14,22 +14,25 @@ module.exports = {
         "2xl": "1920px",
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Libre Baskerville", ...defaultTheme.fontFamily.serif],
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        serif: ["var(--font-libre)", ...defaultTheme.fontFamily.serif],
       },
       colors: {
-        grey: {
+        "oval-grey": {
           light: "#8E8C95",
           dark: {
             primary: "#64626A",
             secondary: "#3B3A40",
           },
         },
-        green: {
+        "oval-green": {
           light: "#C2EED8",
         },
-        orange: "#FF6846",
-        gold: "#FFDEA7",
+        "oval-blue": {
+          light: "#C0EEF5",
+        },
+        "oval-orange": "#FF6846",
+        "oval-gold": "#FFDEA7",
       },
     },
   },

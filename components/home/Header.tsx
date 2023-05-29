@@ -1,33 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Graph from "../../public/assets/images/home/graph.png";
+import Graph from "@/public/assets/images/home/graph.png";
 
 const Header = () => {
   return (
     <header className="mt-5 mb-14 md:mt-12 md:mb-[120px] xl:mt-[105px] xl:mb-[200px]">
       <div className="space-y-[26px] md:space-y-[42px] xl:space-y-[48px]">
         <div className="space-y-[18px] md:space-y-6">
-          <h1 className="text-center w-[280px] md:w-[600px] xl:w-[836px] mx-auto">
+          <h1 className="text-center max-w-[280px] md:max-w-[600px] xl:max-w-[836px] mx-auto">
             Simpler tool that{" "}
             <span className="relative">
               freedom{" "}
-              <span className="bg-gold absolute bottom-2 left-0 md:-left-3 xl:left-0 w-full h-[24px] md:h-[39px] xl:h-[46px] -z-10"></span>
+              <span className="bg-oval-gold absolute bottom-2 left-0 md:-left-3 xl:left-0 w-full h-[24px] md:h-[39px] xl:h-[46px] -z-10"></span>
             </span>
             your work way.
           </h1>
-          <p className="para text-center w-[280px] md:w-[490px] mx-auto">
+          <p className="paragraph text-center max-w-[280px] md:max-w-[490px] mx-auto">
             Build your own workspace to replace isolated tools and bring
             everyone together.
           </p>
         </div>
         <div className="flex gap-x-4 xl:gap-x-6 justify-center">
-          <Link href="/download" passHref>
-            <a className="text-white text-[15px] md:text-base py-[13px] md:py-4 xl:py-5 px-6 md:px-10 xl:px-[55px] font-bold bg-orange rounded-lg">
-              Try for free
-            </a>
+          <Link
+            href="/download"
+            className="text-white text-[15px] md:text-base py-[13px] md:py-4 xl:py-5 px-6 md:px-10 xl:px-[55px] font-bold bg-oval-orange rounded-lg"
+          >
+            Try for free
           </Link>
-          <button className="inline-block border border-grey-light py-[13px] md:py-4 px-3 md:px-5 rounded-lg">
+          <button className="inline-block border border-oval-grey-light py-[13px] md:py-4 px-3 md:px-5 rounded-lg">
             <svg
               width="20"
               height="20"
@@ -55,7 +56,7 @@ const Header = () => {
         <p className="text-lg md:text-[22px] xl:text-xl leading-[21px] md:leading-[27px] xl:leading-[29px] text-black font-semibold">
           Tools erect walls
         </p>
-        <p className="para w-[280px] md:w-[567px] xl:w-[657px] mx-auto">
+        <p className="paragraph max-w-[280px] md:max-w-[567px] xl:max-w-[657px] mx-auto">
           Collaboration is a struggle, when everybody uses a different app. We
           have the solution for that.
         </p>

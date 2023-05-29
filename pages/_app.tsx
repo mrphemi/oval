@@ -1,11 +1,20 @@
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { Inter, Libre_Baskerville } from "next/font/google";
+
 import { DefaultSeo } from "next-seo";
 
 import Nav from "@/components/common/Nav";
 import Footer from "@/components/common/Footer";
 
 import "../styles/globals.css"; // Global style sheet for css
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const libre = Libre_Baskerville({
+  subsets: ["latin"],
+  variable: "--font-libre",
+  weight: ["400", "700"],
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -40,9 +49,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Nav />
-      <Component {...pageProps} />
-      <Footer />
+
+      <div className={`${inter.variable} ${libre.variable} font-sans`}>
+        <Nav />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   );
 }
