@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 type Props = ComponentPropsWithoutRef<"svg">;
 
-const Quote = ({ className }: Props) => {
+const Quote = (props: Props) => {
   return (
     <svg
       width="96"
@@ -10,7 +10,7 @@ const Quote = ({ className }: Props) => {
       viewBox="0 0 96 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      {...props}
     >
       <path
         fillRule="evenodd"

@@ -1,11 +1,4 @@
-import { ComponentPropsWithoutRef } from "react";
-
-import { classNames } from "@/utils";
-
-interface StatType extends ComponentPropsWithoutRef<"div"> {
-  title: string;
-  subtitle: string;
-}
+import Stat from "../common/Stat";
 
 const Stats = () => {
   return (
@@ -15,21 +8,25 @@ const Stats = () => {
           <p className="text-lg md:text-xl xl:text-2xl max-w-[250px] md:max-w-[397px] xl:max-w-[384px] mx-auto text-center xl:text-left md:col-span-2 xl:place-self-end xl:mx-0">
             Businesses all over the world trust Oval to build their own workflow
           </p>
-          <Stat title="10 years" subtitle="In business" className="xl:-mt-60" />
+          <Stat
+            title="10 years"
+            subtitle="In business"
+            className="text-center xl:-mt-60"
+          />
           <Stat
             title="75,000+"
             subtitle="Customers"
-            className="md:mt-14 xl:mt-40 xl:place-self-end"
+            className="text-center md:mt-14 xl:mt-40 xl:place-self-end"
           />
           <Stat
             title="1,092"
             subtitle="Partner Companies"
-            className="xl:-mt-60"
+            className="text-center xl:-mt-60"
           />
           <Stat
             title="39+"
             subtitle="Branch Offices"
-            className="md:mt-14 xl:mt-40 xl:place-self-center"
+            className="text-center md:mt-14 xl:mt-40 xl:place-self-center"
           />
           <hr className="bg-oval-orange h-[1px] w-40 border-none mx-auto md:mx-0 md:place-self-center md:-mt-12" />
         </div>
@@ -39,17 +36,3 @@ const Stats = () => {
 };
 
 export default Stats;
-
-const Stat = ({ title, subtitle, className }: StatType) => {
-  return (
-    <div className={classNames("w-fit", className ? className : "")}>
-      <div className="space-y-4 text-center">
-        <p className="font-serif italic text-black text-[64px] md:text-7xl xl:text-[100px] relative">
-          {title}
-          <span className="bg-oval-gold absolute bottom-5 md:bottom-1 left-0 w-full h-[10px] md:h-5 -z-10"></span>
-        </p>
-        <p>{subtitle}</p>
-      </div>
-    </div>
-  );
-};

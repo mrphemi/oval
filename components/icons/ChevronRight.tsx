@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 type Props = ComponentPropsWithoutRef<"svg">;
 
-const ChevronRight = ({ className }: Partial<Props>) => {
+const ChevronRight = (props: Partial<Props>) => {
   return (
     <svg
       width="16"
@@ -10,7 +10,7 @@ const ChevronRight = ({ className }: Partial<Props>) => {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      {...props}
     >
       <path
         d="M5 2L11 8L5 14"

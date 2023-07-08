@@ -18,7 +18,7 @@ const Pricing = () => {
             <p className="font-serif italic text-xs md:text-sm text-oval-orange text-center">
               Save 13%
             </p>
-            <p className="paragraph font-medium text-oval-grey-dark-secondary">
+            <p className="copy font-medium text-oval-grey-dark-secondary">
               Annual Plans
             </p>
           </div>
@@ -27,7 +27,7 @@ const Pricing = () => {
             <Switch.Thumb className="switch-thumb block w-5 h-5 md:w-10 md:h-10 bg-white rounded-full will-change-transform duration-150 translate-x-1 data-[state=checked]:translate-x-8 md:data-[state=checked]:translate-x-11" />
           </Switch.Root>
 
-          <p className="paragraph font-medium text-oval-grey-dark-secondary">
+          <p className="copy font-medium text-oval-grey-dark-secondary">
             Monthly Plans
           </p>
         </div>

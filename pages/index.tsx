@@ -12,13 +12,15 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main id="home">
         <Workspace />
         <Roles />
         <Focus />
         <Testimonials />
-        <Stats />
-        <Pricing />
+        <div className="md:bg-bitmap-pattern-lg bg-no-repeat md:bg-[-70px_calc(25%)] xl:bg-[left_calc(50%-120px)]">
+          <Stats />
+          <Pricing />
+        </div>
       </main>
     </>
   );

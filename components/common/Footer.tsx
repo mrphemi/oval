@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Logo, Socials & Copyright  */}
         <div className="flex md:flex-col justify-between md:justify-start xl:justify-between gap-y-[60px] md:max-w-[108px]">
           <div className="flex flex-col-reverse md:flex-col gap-y-11 md:gap-y-6">
-            <Link href="">
+            <Link href="/">
               <Logo theme="light" />
             </Link>
 

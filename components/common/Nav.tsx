@@ -8,7 +8,9 @@ const Nav = () => {
     <nav className="wrapper py-5 md:flex gap-x-20 items-center text-sm">
       {/* Logo and Hamburger */}
       <div className="flex md:flex-row-reverse justify-between md:justify-start md:gap-x-6">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         <svg
           width="24"
           height="24"

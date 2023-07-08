@@ -51,7 +51,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
 
       <div className={`${inter.variable} ${libre.variable} font-sans`}>
-        <Nav />
         <Component {...pageProps} />
         <Footer />
       </div>

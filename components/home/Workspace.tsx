@@ -30,7 +30,7 @@ const Workspace = () => {
               </span>{" "}
               workspace.
             </h2>
-            <p className="max-w-[461px] mx-auto xl:mx-0">
+            <p className="max-w-[461px] mx-auto xl:mx-0 copy">
               It will take a couple of hours, but will save your company weeks
               in the long term.
             </p>

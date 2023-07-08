@@ -41,7 +41,7 @@
   }
 
   /* Default paragraph stylings */
-  .paragraph {
+  .copy {
     @apply text-sm md:text-lg xl:text-xl leading-[22px] md:leading-[28px] xl:leading-[30px];
   }
 }

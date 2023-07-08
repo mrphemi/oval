@@ -22,14 +22,14 @@ const Roles = () => {
         {/* Heading */}
         <div className="flex justify-center">
           <div className="space-y-3 md:space-y-4 text-center max-w-[839px]">
-            <h2 className="">
+            <h2>
               Bring all the roles{" "}
               <span className="relative">
                 together.
                 <span className="bg-oval-blue-light absolute bottom-2 left-0 w-full h-[24px] md:h-[39px] xl:h-[46px] -z-10"></span>
               </span>{" "}
             </h2>
-            <p className="max-w-[461px] mx-auto">
+            <p className="max-w-[461px] mx-auto copy">
               We believe in autonomous teams that own their work and their piece
               of workspace.
             </p>

@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 type Props = ComponentPropsWithoutRef<"svg">;
 
-const Facebook = ({ className }: Props) => {
+const Facebook = (props: Props) => {
   return (
     <svg
       width="30"
@@ -10,7 +10,7 @@ const Facebook = ({ className }: Props) => {
       viewBox="0 0 30 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      {...props}
     >
       <circle opacity="0.24" cx="15" cy="15" r="14" stroke="#E8E7E8" />
       <path

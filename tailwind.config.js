@@ -34,6 +34,11 @@ module.exports = {
         "oval-orange": "#FF6846",
         "oval-gold": "#FFDEA7",
       },
+      backgroundImage: {
+        "bitmap-pattern-sm": "url(/assets/images/bitmap-bg-sm.png)",
+        "bitmap-pattern-lg": "url(/assets/images/bitmap-bg-lg.png)",
+        oval: "url(/assets/images/oval.svg)",
+      },
     },
   },
   plugins: [],

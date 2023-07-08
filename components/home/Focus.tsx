@@ -30,7 +30,7 @@ const Focus = () => {
               </span>{" "}
               work.
             </h2>
-            <p className="max-w-[461px] mx-auto xl:mx-0">
+            <p className="max-w-[461px] mx-auto xl:mx-0 copy">
               Your workspace naturally maps the way you work, so there is
               nothing to be distracted by.
             </p>
